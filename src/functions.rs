@@ -67,3 +67,14 @@ pub fn if11(mut a: i32, mut b: i32) {
   } 
   println!("A -> {} || B -> {}", a, b)
 }
+
+pub fn if12( num1: i32,  num2: i32,  num3: i32){
+  let mut smallest: i32 = num1;
+  if smallest > num2 {
+    smallest = num2;
+  }
+  if smallest > num3 {
+    smallest = num3
+  }
+  println!("Given Number -> Num1 = {}, Num2 = {}, Num3 = {} || Smallest -> {}", num1, num2, num3, smallest)
+}
