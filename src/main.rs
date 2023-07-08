@@ -1,5 +1,5 @@
 mod functions;
-use functions::{if1, if2, if4, if5, if6, if7, if8, if10, if11, if12};
+use functions::{if1, if2, if4, if5, if6, if7, if8, if10, if11, if12, if13};
 
 fn main() {
     println!("\n============ IF 1 ============");
@@ -55,5 +55,11 @@ fn main() {
     if12(2, 1, 3);
     if12(3, 2, 1);
     if12(1, 1, 1);
+
+    println!("\n============ IF 13 ============");
+    if13(1, 2, 3);
+    if13(12, 11, 13);
+    if13(33, 32, 31);
+    if13(1, 41, 41);
 
 }
