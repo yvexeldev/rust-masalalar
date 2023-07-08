@@ -78,17 +78,27 @@ pub fn if12( num1: i32,  num2: i32,  num3: i32){
   if smallest > num3 {
     smallest = num3
   }
-  println!("Given Number -> Num1 = {}, Num2 = {}, Num3 = {} || Smallest -> {}", num1, num2, num3, smallest)
+  println!("Given Numbers -> Num1 = {}, Num2 = {}, Num3 = {} || Smallest -> {}", num1, num2, num3, smallest)
 }
 
-pub fn if13( num1: i32,  num2: i32,  num3: i32){
-  let middle: i32;
-  if num1 > num2 && num2 > num3 || num3 > num2 && num2 > num1{
-    middle = num2;
-  }else if num2 > num1 && num1 > num3 || num3 > num1 && num1 > num2 {
-    middle = num1;
-  }else {
-    middle = num3;
-  }
-  println!("Given Number -> Num1 = {}, Num2 = {}, Num3 = {} || Middle num -> {}", num1, num2, num3, middle);
+pub fn if13(num1: i32, num2: i32, num3: i32) {
+  let given1: i32 = num1;
+  let given2: i32 = num2;
+  let given3: i32 = num3;
+
+  let mut arr: [i32; 3] = [num1, num2, num3];
+  arr.sort_unstable();
+
+  println!("Given Numbers -> Num1 = {}, Num2 = {}, Num3 = {} || Middle num -> {}", given1, given2, given3, arr[1]);
+}
+
+pub fn if14( num1: i32,  num2: i32,  num3: i32){
+  let given1: i32 = num1;
+  let given2: i32 = num2;
+  let given3: i32 = num3;
+
+  let mut arr: [i32; 3] = [num1, num2, num3];
+  arr.sort_unstable();
+
+  println!("Given Numbers -> Num1 = {}, Num2 = {}, Num3 = {} || Result -> {:?}", given1, given2, given3, arr);
 }
