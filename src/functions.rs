@@ -3,7 +3,7 @@ pub fn if1( son: i32) {
   if son > 0 {
       result += 1;
   }
-  println!("Son -> {} || Result -> {}", son, result);
+  println!("Given number -> {} || Result -> {}", son, result);
 }
 
 pub fn if2( son: i32) {
@@ -13,7 +13,7 @@ pub fn if2( son: i32) {
   }else if son < 0 {
       result -= 2;
   }
-  println!("Son -> {} || Result -> {}", son, result);
+  println!("Given number -> {} || Result -> {}", son, result);
 }
 
 
@@ -58,6 +58,8 @@ pub fn if10(mut a: i32, mut b: i32) {
 }
 
 pub fn if11(mut a: i32, mut b: i32) {
+  let given_a: i32 = a;
+  let given_b: i32 = b;
   if a != b {
       a = if a > b {a} else {b};
       b = a;
@@ -65,7 +67,7 @@ pub fn if11(mut a: i32, mut b: i32) {
       a = 0;
       b = a;
   } 
-  println!("A -> {} || B -> {}", a, b)
+  println!("Given numbers -> A = {}, B = {} || Result -> A = {}, B = {}",given_a, given_b, a, b)
 }
 
 pub fn if12( num1: i32,  num2: i32,  num3: i32){
